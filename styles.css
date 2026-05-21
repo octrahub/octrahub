@@ -80,6 +80,19 @@ input {
   font-weight: 700;
 }
 
+.brand b {
+  border: 1px solid var(--line);
+  color: var(--blue-soft);
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px 7px;
+  text-transform: lowercase;
+}
+
+.wallet-contact {
+  overflow-wrap: anywhere;
+}
+
 .brand-note::before {
   content: "";
   width: 10px;
@@ -447,6 +460,49 @@ h1 {
   padding: 26px;
 }
 
+.repo-list {
+  display: grid;
+  gap: 10px;
+}
+
+.repo-list article {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 18px;
+}
+
+.repo-list h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  line-height: 1.05;
+  text-transform: lowercase;
+}
+
+.repo-list p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.repo-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  border: 1px solid var(--line);
+  color: var(--text);
+  padding: 0 12px;
+  text-decoration: none;
+}
+
+.repo-list a:hover {
+  border-color: var(--blue);
+  color: var(--blue-soft);
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -522,6 +578,10 @@ footer {
   }
 
   .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .repo-list article {
     grid-template-columns: 1fr;
   }
 
