@@ -14,7 +14,7 @@ window.OCTRA_CATEGORIES = [
   "watchlist",
 ];
 
-window.OCTRA_STATUSES = ["active", "in development", "testnet", "beta", "announced", "watchlist"];
+window.OCTRA_STATUSES = ["active", "in development", "testnet", "beta", "announced", "watchlist", "inactive"];
 
 window.OCTRA_PROJECTS = [
   {
@@ -75,7 +75,7 @@ window.OCTRA_PROJECTS = [
   {
     name: "octra faucet",
     category: "official",
-    status: "active",
+    status: "inactive",
     confidence: "verified",
     description: "official testnet faucet for getting octra network tokens.",
     website: "https://faucet.octra.network/",
@@ -85,7 +85,7 @@ window.OCTRA_PROJECTS = [
   {
     name: "devnet faucet",
     category: "official",
-    status: "testnet",
+    status: "inactive",
     confidence: "verified",
     description: "devnet faucet used by builders and testers.",
     website: "https://faucet-devnet.octra.com/",
