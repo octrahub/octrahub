@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>octrahub knowledge base</title>
+    <meta name="description" content="community notes on fhe, octra, privacy primitives, and cypherpunk values." />
+    <meta name="theme-color" content="#151515" />
+    <link rel="canonical" href="https://octrahub.com/knowledge.html" />
+    <meta property="og:title" content="octrahub knowledge base" />
+    <meta property="og:description" content="community notes on fhe, octra, privacy primitives, and cypherpunk values." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://octrahub.com/knowledge.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="octrahub knowledge base" />
+    <meta name="twitter:description" content="community notes on fhe, octra, privacy primitives, and cypherpunk values." />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./knowledge.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="octrahub home">
+        <span>octrahub</span>
+        <small>knowledge base · community notes</small>
+      </a>
+      <nav aria-label="primary navigation">
+        <a href="./index.html">directory</a>
+        <a href="https://x.com/octrahub" target="_blank" rel="noreferrer">x</a>
+      </nav>
+      <div class="market-ticker" id="marketTicker" aria-label="oct price">
+        <span>oct</span>
+        <strong>—</strong>
+      </div>
+    </header>
+
+    <main class="knowledge-layout">
+      <section class="intro knowledge-hero">
+        <h1>privacy primitives for builders</h1>
+        <p>
+          short explainers on fhe, octra, cypherpunk values, and how private computation can change on-chain apps.
+        </p>
+      </section>
+
+      <section class="knowledge-grid" aria-label="knowledge base articles">
+        <article class="kb-card featured">
+          <span>01</span>
+          <h2>what is fhe?</h2>
+          <p>
+            fully homomorphic encryption lets computation happen over encrypted data. in simple terms: apps can process data without seeing the raw input.
+          </p>
+          <ul>
+            <li>users keep sensitive state private</li>
+            <li>programs can still compute useful outputs</li>
+            <li>privacy becomes part of the execution layer</li>
+          </ul>
+        </article>
+
+        <article class="kb-card">
+          <span>02</span>
+          <h2>why octra?</h2>
+          <p>
+            octra focuses on private execution environments, encrypted balances, stealth transactions, and developer primitives for confidential apps.
+          </p>
+        </article>
+
+        <article class="kb-card">
+          <span>03</span>
+          <h2>why privacy matters</h2>
+          <p>
+            public ledgers are useful, but permanent financial exposure is not normal for most users, teams, games, markets, or social products.
+          </p>
+        </article>
+
+        <article class="kb-card">
+          <span>04</span>
+          <h2>how to start</h2>
+          <p>
+            create a wallet, request faucet tokens, install or use a client, read the docs, then test small transactions before interacting with new apps.
+          </p>
+          <div class="kb-links">
+            <a href="https://docs.octra.org/generating-a-wallet" target="_blank" rel="noreferrer">wallet</a>
+            <a href="https://faucet.octra.network/" target="_blank" rel="noreferrer">faucet</a>
+            <a href="https://docs.octra.org" target="_blank" rel="noreferrer">docs</a>
+          </div>
+        </article>
+
+        <article class="kb-card">
+          <span>lp</span>
+          <h2>litepaper</h2>
+          <p>
+            octra network litepaper is the best starting point for the core architecture, hfhe direction, and network model.
+          </p>
+          <div class="kb-links">
+            <a href="https://octra.org/litepaper.pdf" target="_blank" rel="noreferrer">open litepaper</a>
+          </div>
+        </article>
+
+        <article class="kb-card">
+          <span>05</span>
+          <h2>cypherpunk note</h2>
+          <p>
+            privacy is not secrecy for its own sake. it is the ability to choose what is revealed, to whom, and under what conditions.
+          </p>
+          <div class="kb-links">
+            <a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank" rel="noreferrer">cypherpunk manifesto</a>
+          </div>
+        </article>
+
+        <article class="kb-card">
+          <span>06</span>
+          <h2>use cases</h2>
+          <p>
+            private defi positions, encrypted balances, sealed games, confidential identity, private agent state, hidden order flow, and safer user data.
+          </p>
+        </article>
+      </section>
+
+      <section class="glossary" aria-labelledby="glossaryTitle">
+        <div class="category-header">
+          <h2 id="glossaryTitle">glossary</h2>
+          <span>starter terms</span>
+        </div>
+        <div class="glossary-list">
+          <div><strong>fhe</strong><p>encryption that supports computation over encrypted values.</p></div>
+          <div><strong>hfhe</strong><p>octra's hypergraph-focused fhe approach described in technical docs.</p></div>
+          <div><strong>stealth transaction</strong><p>a transaction pattern designed to reduce public linkability.</p></div>
+          <div><strong>encrypted balance</strong><p>account state that can be used without exposing raw balance data publicly.</p></div>
+          <div><strong>circle</strong><p>an isolated execution environment for app logic and encrypted state.</p></div>
+          <div><strong>woct</strong><p>wrapped oct asset used outside the native octra network.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>community notes. not official documentation.</span>
+      <a href="https://docs.octra.org" target="_blank" rel="noreferrer">verify with official octra docs.</a>
+    </footer>
+    <script src="./market.js"></script>
+  </body>
+</html>

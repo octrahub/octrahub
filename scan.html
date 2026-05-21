@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>octrahub (lite)</title>
+    <meta name="description" content="lite octrascan-style view of the community-made octra ecosystem directory." />
+    <meta name="theme-color" content="#d5dce7" />
+    <link rel="canonical" href="https://octrahub.com/scan.html" />
+    <link rel="stylesheet" href="./scan.css" />
+  </head>
+  <body>
+    <header class="topline">
+      <div>
+        <h1>octrahub (lite) | community</h1>
+        <span>build eco/2026</span>
+      </div>
+      <b>not official</b>
+    </header>
+
+    <main>
+      <label class="scan-search">
+        <span aria-hidden="true"></span>
+        <input id="searchInput" type="search" placeholder="search projects, categories, status..." autocomplete="off" />
+      </label>
+
+      <section class="summary" aria-label="directory summary">
+        <button class="summary-cell active" data-filter="all"><span>all projects</span><strong id="totalCount">0</strong></button>
+        <button class="summary-cell" data-filter="official"><span>official</span><strong data-category-count="official">0</strong></button>
+        <button class="summary-cell" data-filter="wallets"><span>wallets</span><strong data-category-count="wallets">0</strong></button>
+        <button class="summary-cell" data-filter="explorers"><span>explorers</span><strong data-category-count="explorers">0</strong></button>
+        <button class="summary-cell" data-filter="defi"><span>defi</span><strong data-category-count="defi">0</strong></button>
+        <button class="summary-cell" data-filter="bridges"><span>bridges</span><strong data-category-count="bridges">0</strong></button>
+        <button class="summary-cell" data-filter="launchpads"><span>launchpads</span><strong data-category-count="launchpads">0</strong></button>
+        <button class="summary-cell" data-filter="ai agents"><span>ai agents</span><strong data-category-count="ai agents">0</strong></button>
+        <button class="summary-cell" data-filter="social"><span>social</span><strong data-category-count="social">0</strong></button>
+        <button class="summary-cell" data-filter="developer"><span>developer</span><strong data-category-count="developer">0</strong></button>
+        <button class="summary-cell" data-filter="infrastructure"><span>infrastructure</span><strong data-category-count="infrastructure">0</strong></button>
+        <button class="summary-cell" data-filter="resources"><span>resources</span><strong data-category-count="resources">0</strong></button>
+        <button class="summary-cell" data-filter="watchlist"><span>watchlist</span><strong data-category-count="watchlist">0</strong></button>
+        <button class="summary-cell status-filter" data-status="active"><span>active</span><strong data-status-count="active">0</strong></button>
+        <button class="summary-cell status-filter" data-status="in development"><span>in development</span><strong data-status-count="in development">0</strong></button>
+        <button class="summary-cell status-filter" data-status="testnet"><span>testnet</span><strong data-status-count="testnet">0</strong></button>
+        <button class="summary-cell status-filter" data-status="beta"><span>beta</span><strong data-status-count="beta">0</strong></button>
+        <button class="summary-cell status-filter" data-status="announced"><span>announced</span><strong data-status-count="announced">0</strong></button>
+        <button class="summary-cell status-filter" data-status="watchlist"><span>watchlist</span><strong data-status-count="watchlist">0</strong></button>
+      </section>
+
+      <section id="directory" class="directory" aria-label="ecosystem directory"></section>
+    </main>
+
+    <footer>2026 community ecosystem index.</footer>
+    <script src="./projects.js?v=factory-amm"></script>
+    <script src="./scan.js"></script>
+  </body>
+</html>

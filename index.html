@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>octrahub</title>
+    <meta name="description" content="community-made directory for the octra ecosystem. projects, tools, wallets, infra, and apps." />
+    <meta name="theme-color" content="#151515" />
+    <link rel="canonical" href="https://octrahub.com/" />
+    <meta property="og:title" content="octrahub" />
+    <meta property="og:description" content="community-made directory for the octra ecosystem." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://octrahub.com/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="octrahub" />
+    <meta name="twitter:description" content="community-made directory for the octra ecosystem." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="octrahub home">
+        <span>octrahub</span>
+        <small class="brand-note">community made · not official</small>
+      </a>
+      <nav aria-label="primary navigation">
+        <a href="./knowledge.html">knowledge</a>
+        <a href="https://x.com/octrahub" target="_blank" rel="noreferrer">x</a>
+      </nav>
+      <div class="market-ticker" id="marketTicker" aria-label="oct price">
+        <span>oct</span>
+        <strong>—</strong>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1>octrahub</h1>
+        <p>
+          community-made directory for the octra ecosystem. projects, tools, wallets, infra, and apps.
+        </p>
+      </section>
+
+      <section class="toolbar" aria-label="directory filters">
+        <label class="search">
+          <span aria-hidden="true">search</span>
+          <input id="searchInput" type="search" placeholder="project, category, status..." autocomplete="off" />
+        </label>
+        <div class="status-filters" aria-label="status filters">
+          <button class="active" data-status="all">all</button>
+          <button data-status="active">active</button>
+          <button data-status="in development">in development</button>
+          <button data-status="testnet">testnet</button>
+          <button data-status="beta">beta</button>
+          <button data-status="announced">announced</button>
+          <button data-status="watchlist">watchlist</button>
+          <button data-status="paused">paused</button>
+        </div>
+      </section>
+
+      <section class="official-resources" aria-labelledby="officialResourcesTitle">
+        <div>
+          <p>official resources</p>
+          <h2 id="officialResourcesTitle">verify from source</h2>
+        </div>
+        <div class="resource-grid">
+          <a href="https://octra.org" target="_blank" rel="noreferrer">
+            <span>website</span>
+            <strong>octra.org</strong>
+          </a>
+          <a href="https://docs.octra.org" target="_blank" rel="noreferrer">
+            <span>docs</span>
+            <strong>docs.octra.org</strong>
+          </a>
+          <a href="https://octra.org/litepaper.pdf" target="_blank" rel="noreferrer">
+            <span>litepaper</span>
+            <strong>network litepaper</strong>
+          </a>
+          <a href="https://x.com/octra" target="_blank" rel="noreferrer">
+            <span>official x</span>
+            <strong>@octra</strong>
+          </a>
+          <a href="https://x.com/octralex" target="_blank" rel="noreferrer">
+            <span>alex co-founder</span>
+            <strong>@octralex</strong>
+          </a>
+          <a href="https://x.com/lambda0xE" target="_blank" rel="noreferrer">
+            <span>λ co-founder cto</span>
+            <strong>@lambda0xE</strong>
+          </a>
+          <a href="https://github.com/octra-labs" target="_blank" rel="noreferrer">
+            <span>github</span>
+            <strong>octra-labs</strong>
+          </a>
+          <a href="https://octrascan.io" target="_blank" rel="noreferrer">
+            <span>explorer</span>
+            <strong>octrascan</strong>
+          </a>
+          <a href="https://faucet.octra.network/" target="_blank" rel="noreferrer">
+            <span>faucet</span>
+            <strong>testnet faucet</strong>
+          </a>
+        </div>
+      </section>
+
+      <section id="directory" class="directory" aria-label="ecosystem projects"></section>
+    </main>
+
+    <footer>
+      <span>2026 community ecosystem index.</span>
+      <a href="https://docs.octra.org" target="_blank" rel="noreferrer">always verify with official octra docs.</a>
+    </footer>
+
+    <script src="./projects.js?v=factory-amm"></script>
+    <script src="./app.js"></script>
+    <script src="./market.js"></script>
+  </body>
+</html>
